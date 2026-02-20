@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Paper, Typography, Grid, Button } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { Box, Paper, Typography, Grid } from '@mui/material';
 import axios from 'axios';
 import { UserContext } from "../../../ContextProvider";
 import { useContext } from "react";
@@ -12,7 +11,7 @@ export default function Dashboard() {
     categories: 0,
     products: 0,
   });
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     // Fetch users count

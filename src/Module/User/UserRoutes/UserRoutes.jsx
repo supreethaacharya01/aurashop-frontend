@@ -13,7 +13,7 @@ import Checkout from '../UserComponents/Checkout'
 import OrderSuccess from '../UserComponents/OrderSuccess'
 import MyOrders from '../UserComponents/MyOrder'
 import Payment from '../UserComponents/Payment'
-import ContextProvider from '../../../ContextProvider'
+
 
 export default function UserRoutes() {
   const location=useLocation();
