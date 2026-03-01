@@ -7,11 +7,11 @@ import {
   FavoriteBorder, ShoppingCart, Visibility 
 } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
-import { UserContext } from "../../../ContextProvider";
-import { useContext } from "react";
+// import { UserContext } from "../../../ContextProvider";
+// import { useContext } from "react";
 
 export default function ModernCards({ product }) {
-  const { host } = useContext(UserContext);
+  
   const navigate = useNavigate();
 
   return (
