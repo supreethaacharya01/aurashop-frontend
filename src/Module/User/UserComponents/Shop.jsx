@@ -86,11 +86,12 @@ export default function ModernShop() {
     if (!categoryName) return menImg;
     const name = categoryName.toLowerCase().trim();
 
+    // ⚠️ women must be checked BEFORE men (because "women" contains "men")
     if (name.includes("women")) return womenImg;
-    if (name.includes("footwar") || name.includes("footwear") || name.includes("shoe")) return footwearImg;
     if (name.includes("kids") || name.includes("children")) return kidsImg;
+    if (name.includes("footwar") || name.includes("footwear") || name.includes("shoe")) return footwearImg;
     if (name.includes("accessor")) return accesseriesImg;
-    if (name.includes("men")) return menImg;
+    if (name.includes("men")) return menImg;  // ← men must be LAST
 
     return menImg;
 };
