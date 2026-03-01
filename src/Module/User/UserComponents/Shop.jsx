@@ -86,14 +86,14 @@ export default function ModernShop() {
     if (!categoryName) return menImg;
     const name = categoryName.toLowerCase().trim();
 
-    if (name === "women" || name === "womens") return womenImg;
-    if (name === "footwear" || name.includes("shoe")) return footwearImg;
-    if (name === "kids" || name === "children") return kidsImg;
-    if (name === "accessories" || name === "accessory") return accesseriesImg;
-    if (name === "men" || name === "mens") return menImg;
+    if (name.includes("women")) return womenImg;
+    if (name.includes("footwear") || name.includes("shoe")) return footwearImg;
+    if (name.includes("kids") || name.includes("children")) return kidsImg;
+    if (name.includes("accessor")) return accesseriesImg;
+    if (name.includes("men")) return menImg;
 
     return menImg;
-  };
+};
 
   return (
     <Box sx={{ bgcolor: '#f8f9fa', minHeight: '100vh', pb: 6 }}>
