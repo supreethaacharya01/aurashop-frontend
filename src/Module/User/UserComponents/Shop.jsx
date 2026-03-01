@@ -82,12 +82,12 @@ export default function ModernShop() {
   };
 
   // Category Image Mapping
-  const getCategoryImage = (categoryName) => {
+ const getCategoryImage = (categoryName) => {
     if (!categoryName) return menImg;
     const name = categoryName.toLowerCase().trim();
 
     if (name.includes("women")) return womenImg;
-    if (name.includes("footwear") || name.includes("shoe")) return footwearImg;
+    if (name.includes("footwar") || name.includes("footwear") || name.includes("shoe")) return footwearImg;
     if (name.includes("kids") || name.includes("children")) return kidsImg;
     if (name.includes("accessor")) return accesseriesImg;
     if (name.includes("men")) return menImg;
