@@ -103,7 +103,7 @@ const buyNow = async () => {
             }}
           >
             <img
-              src={`${host}/api/image/${product.product_image}`}
+              src={product.product_image}
               alt={product.product_name}
               style={{
                 width: "100%",

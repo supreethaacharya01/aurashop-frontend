@@ -26,8 +26,9 @@ export default function Registration() {
         alert("User registered successfully!");
         navigate("/Login");
       })
-      .catch(() => {
-        alert("Server error");
+      .catch((err) => {                                        // ← capture the error
+        console.error("Registration error:", err.response?.data); // ← print real error in console
+        alert(err.response?.data?.message || "Server error"); // ← show real message in alert
       });
   };
 

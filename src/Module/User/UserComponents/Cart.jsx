@@ -107,7 +107,7 @@ export default function Cart() {
                   }}
                 >
                   <img
-                    src={`${host}/api/image/${product.product_image}`}
+                    src={product.product_image}
                     alt={product.product_name}
                     style={{ width: "80px", height: "80px", marginRight: "20px", objectFit: 'cover' }}
                   />

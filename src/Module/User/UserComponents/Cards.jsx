@@ -120,7 +120,7 @@ export default function ModernCards({ product }) {
         >
           <CardMedia
             component="img"
-            image={`${host}/api/image/${product.product_image}`}
+           image={product.product_image}
             alt={product.product_name}
             sx={{
               position: 'absolute',
